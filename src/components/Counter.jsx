@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
+import MyButton from './UI/button/MyButton';
 
-const Counter = function () {
+function Counter() {
     const [count, setCount] = useState(0)
 
     function increment() {
@@ -16,8 +17,8 @@ const Counter = function () {
             <h1>
                 {count}
             </h1>
-            <button onClick={increment}>Increment</button>
-            <button onClick={decrement}>Decrement</button>
+            <MyButton onClick={increment}>+</MyButton>
+            <MyButton onClick={decrement}>-</MyButton>
         </div>
     )
 }
