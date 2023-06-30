@@ -9,7 +9,7 @@ const PostList = ({ posts, title, remove }) => {
                 {title}
             </h1>
             {posts.map(post =>
-                <PostItem post={post} key={post.id} remove={remove} />
+                <PostItem post={post} remove={remove} key={post.key} />
             )}
         </div>
     )
