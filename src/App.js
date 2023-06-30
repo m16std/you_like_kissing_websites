@@ -61,7 +61,6 @@ function App() {
   return (
     <div className="App">
 
-      <MyButton onClick={() => setModal(true)} style={{ margin: '20px' }}>AAAAAAAAAAA</MyButton>
       <MyModal visible={modal} setVisible={setModal}>
         <PostForm create={createPost} />
       </MyModal>
@@ -79,6 +78,8 @@ function App() {
       <Counter />
 
       <p>times</p>
+
+      <MyButton onClick={() => setModal(true)} style={{ margin: '20px' }}>AAAAAAAAAAA</MyButton>
 
       <hr style={{ margin: '15px', width: '1000px' }} />
 
