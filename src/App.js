@@ -1,6 +1,6 @@
 import React, { useState, useMemo } from 'react';
-import logo from './resources/logo512.png';
-import qr from './resources/qr-code.gif';
+import logo from './components/resources/logo512.png';
+import qr from './components/resources/qr-code.gif';
 import './App.css';
 import Counter from './components/Counter';
 import PostList from './components/PostList';
@@ -9,6 +9,7 @@ import MyInput from './components/UI/input/MyInput';
 import PostForm from './components/PostForm';
 import MySelect from './components/UI/select/MySelect';
 import MyModal from './components/UI/modal/MyModal';
+import Guy from './components/Guy';
 
 function App() {
   const [posts, setPosts] = useState([
@@ -66,8 +67,16 @@ function App() {
       </MyModal>
 
       <header>
-        <img src={logo} className="App-logo" alt="logo" />
+        <img src={logo} alt="logo" height="500px" />
       </header>
+
+      <Guy />
+
+
+      <div background="Red" width="500px">
+        <h2 margin="0" position="absolute" top="300px" right="0px">Huynya</h2>
+      </div>
+
 
       <p>Suck my dick</p>
 
